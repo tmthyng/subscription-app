@@ -1,0 +1,46 @@
+%main.main-container.h-screen.u-center
+  .w-50p
+    .u-text-center
+      %h4 Subscription Details:
+      
+    %form
+      .row.level
+        .col-xs-6.level-item
+          %p.m-0 Name:
+        .col-xs-6.level-item
+          %input{:type => 'name', :placeholder => 'Subscription Name'}
+
+      .row.level
+        .col-xs-6.level-item
+          %p.m-0 Cost:
+        .col-xs-6.level-item
+          %input{:type => 'email', :placeholder => 'Subscription Cost'}
+
+      .row.level
+        .col-xs-6.level-item
+          %p.m-0 Currency:
+        .col-xs-6.level-item
+          %select.select{:placeholder => 'Choose Currency.'}
+            %option NZD
+            %option AUD
+            %option USD
+            %option Euro
+
+      .row.level
+        .col-xs-6.level-item
+          %p.m-0 Frequency:
+        .col-xs-6.level-item
+          %select.select
+            %option Monthly
+            %option Six Months
+            %option Year
+
+      .row.level
+        .col-xs-6.level-item
+          %p.m-0 Next Renewal Date:
+        .col-xs-6.level-item
+          %input{:type => 'date'}
+
+      .row
+        .col-xs-12
+          %input.u-center.btn-primary{:type => 'submit'}
