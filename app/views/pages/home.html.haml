@@ -1,46 +1,35 @@
-%main.main-container.h-screen.u-center
-  .w-50p
-    .u-text-center
-      %h4 Subscription Details:
-      
-    %form
-      .row.level
-        .col-xs-6.level-item
-          %p.m-0 Name:
-        .col-xs-6.level-item
-          %input{:type => 'name', :placeholder => 'Subscription Name'}
+%div.m-auto.p-5.border.border-zinc-500.rounded-lg
+  %h1.text-4xl
+    Subscription Details
 
-      .row.level
-        .col-xs-6.level-item
-          %p.m-0 Cost:
-        .col-xs-6.level-item
-          %input{:type => 'email', :placeholder => 'Subscription Cost'}
+  %form.py-3
+    .mt-8
+      .grid.grid-cols-1.gap-6
+        %label.block
+          %span Name:
+          %input.block.mt-0.px-0.5.w-full.border-0.border-b-2.border-gray-200.focus:ring-0.focus:border-black{:type => 'text'}
 
-      .row.level
-        .col-xs-6.level-item
-          %p.m-0 Currency:
-        .col-xs-6.level-item
-          %select.select{:placeholder => 'Choose Currency.'}
+        %label.block
+          %span Cost:
+          %input.block.mt-0.px-0.5.w-full.border-0.border-b-2.border-gray-200.focus:ring-0.focus:border-black{:type => 'number'}
+
+        %label.block
+          %span Currency:
+          %select.block.mt-0.px-0.5.w-full.border-0.border-b-2.border-gray-200.focus:ring-0.focus:border-black
             %option NZD
             %option AUD
             %option USD
-            %option Euro
+            %option EURO
 
-      .row.level
-        .col-xs-6.level-item
-          %p.m-0 Frequency:
-        .col-xs-6.level-item
-          %select.select
+        %label.block
+          %span Next Due Date:
+          %input.block.mt-0.px-0.5.w-full.border-0.border-b-2.border-gray-200.focus:ring-0.focus:border-black{:type => 'date'}
+
+        %label.block
+          %span Frequency:
+          %select.block.mt-0.px-0.5.w-full.border-0.border-b-2.border-gray-200.focus:ring-0.focus:border-black
             %option Monthly
-            %option Six Months
-            %option Year
+            %option Yearly
 
-      .row.level
-        .col-xs-6.level-item
-          %p.m-0 Next Renewal Date:
-        .col-xs-6.level-item
-          %input{:type => 'date'}
-
-      .row
-        .col-xs-12
-          %input.u-center.btn-primary{:type => 'submit'}
+        %label.block
+          %input.px-3.py-2.text-white.bg-red-500.rounded-md.cursor-pointer{:type => 'submit', :value => 'Submit'}
