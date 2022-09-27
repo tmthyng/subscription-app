@@ -72,4 +72,3 @@ group :test do
 end
 
 gem "tailwindcss-rails", "~> 2.0"
-gem "haml-rails", "~> 2.0"
