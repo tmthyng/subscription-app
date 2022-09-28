@@ -1,0 +1,29 @@
+<%= form_with model: page do |form| %>
+  <div class='mt-12'>
+    <%= form.label :title, :class => 'font-semibold' %><br />
+    <%= form.text_field :title, :class => 'text-zinc-800 rounded-md' %>
+    <% page.errors.full_messages_for(:title).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class='mt-6'>
+    <%= form.label :body, :class => 'font-semibold' %><br />
+    <%= form.text_area :body, :class => 'text-zinc-800 rounded-md' %>
+    <% page.errors.full_messages_for(:body).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class='mt-6'>
+    <%= form.label :renewal_date, :class => 'font-semibold' %><br />
+    <%= form.date_field :renewal_date, :class => 'text-zinc-800 rounded-md' %>
+    <% page.errors.full_messages_for(:renewal_date).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <button class='mt-6 px-4 py-2 text-sm font-semibold text-white bg-sky-400 hover:bg-sky-500 rounded-md'>
+    <%= form.submit %>
+  </button>
+<% end %>
