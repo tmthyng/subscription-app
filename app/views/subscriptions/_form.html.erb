@@ -1,0 +1,31 @@
+<%= form_with model: subscription do |form| %>
+  <div class='mt-4'>
+    <%= form.label :name, :class => 'text-sm font-semibold' %><br />
+    <%= form.text_field :name, :class => 'border-0 border-b-2 border-zinc-300 focus:ring-0 focus:border-zinc-500' %>
+    <% subscription.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class='mt-6'>
+    <%= form.label :cost, :class => 'text-sm font-semibold' %><br />
+    <%= form.number_field :cost, :class => 'border-0 border-b-2 border-zinc-300 focus:ring-0 focus:border-zinc-500' %>
+    <% subscription.errors.full_messages_for(:cost).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class='mt-6'>
+    <%= form.label :renewal_date, :class => 'text-sm font-semibold' %><br />
+    <%= form.date_field :renewal_date, :class => 'border-0 border-b-2 border-zinc-300 focus:ring-0 focus:border-zinc-500' %>
+    <% subscription.errors.full_messages_for(:renewal_date).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class='mt-6'>
+    <button class='block float-left px-3 py-2 text-sm font-semibold rounded-md text-white bg-sky-400 hover:bg-sky-500'>
+      <%= form.submit %>
+    </button>
+  </div>
+<% end %>

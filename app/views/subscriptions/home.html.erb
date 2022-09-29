@@ -1,4 +1,19 @@
 <h1 class='text-3xl font-semibold'>Heading</h1>
-<p class='my-4'>
+<p class='mt-4 mb-8'>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In ante metus dictum at tempor commodo ullamcorper a lacus. Etiam erat velit scelerisque in dictum non consectetur.
 </p>
+
+<%= link_to 'Add Subscription', new_subscription_path, :class => 'px-3 py-2 text-sm font-semibold rounded-md text-white bg-sky-400 hover:bg-sky-500' %>
+
+<p class='mt-8 text-lg font-semibold'>Current Subscriptions:</p>
+
+<ul>
+  <% @subscriptions.each do |subscription| %>
+    <li class='mt-2'>
+      <span class='block float-left hover:underline hover:underline-offset-4'>
+        <%= link_to subscription.name, subscription %>
+      </span>
+      &nbsp;&rarr;
+    </li>
+  <% end %>
+</ul>
