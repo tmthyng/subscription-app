@@ -8,5 +8,5 @@ Using [Ruby on Rails](https://rubyonrails.org/) (v7.0.4) and [Tailwind CSS](http
 **To Do:**
 
 - [x] Initial CRUD setup
-- [ ] Add `:currency` and `:frequency` dropdown select fields to db
+- [ ] Add `:currency` and `:frequency` dropdown fields to db
 - [ ] Set up notification mailers
