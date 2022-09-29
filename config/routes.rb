@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root 'subscriptions#home'
   
-  resources :pages
+  get '/subscriptions', to: 'subscriptions#home'
 end

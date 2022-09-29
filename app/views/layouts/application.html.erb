@@ -4,12 +4,12 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title><%= content_for?(:title) ? yield(:title) : 'TailwindCSS Form' %></title>
+    <title><%= content_for?(:title) ? yield(:title) : 'Tailwind CSS Form' %></title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9996;&#65039;</text></svg>" />
-    
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    
+
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     
@@ -17,9 +17,10 @@
   </head>
 
   <body>
-    <%# <main class="container mx-auto mt-28 px-5 flex"> %>
     <main class="flex h-screen bg-zinc-100 text-zinc-800 dark:bg-zinc-900 dark:text-zinc-200">
-      <%= yield %>
+      <div class="mx-auto mt-32 w-11/12 lg:w-1/2">
+        <%= yield %>
+      </div>
     </main>
   </body>
 </html>
