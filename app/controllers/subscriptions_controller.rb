@@ -1,6 +1,6 @@
 class SubscriptionsController < ApplicationController
   def home
-    @subscriptions = Subscription.all
+    @subscriptions = Subscription.all.order(:name)
   end
 
   def show
