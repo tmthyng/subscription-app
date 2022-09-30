@@ -12,3 +12,4 @@ Using [Ruby on Rails](https://rubyonrails.org/) (v7.0.4) and [Tailwind CSS](http
 - [ ] Add `:currency` and `:frequency` dropdown fields to db
 - [ ] Add `sort_by` feature (A-Z)
 - [ ] Set up notification mailers
+- [ ] Change url slugs from `:id` to `:name`
