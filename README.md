@@ -7,9 +7,8 @@ Using [Ruby on Rails](https://rubyonrails.org/) (v7.0.4) and [Tailwind CSS](http
 
 **To Do:**
 
-- [x] Initial CRUD setup
-- [ ] Fix `data: turbo_confirm`
+- [x] ~~Initial CRUD setup~~
+- [ ] Fix `turbo_confirm:` &mdash; Need to replace versions `v7.1.0` and `v7.1.1` with a version that works
 - [ ] Add `:currency` and `:frequency` dropdown fields to db
+- [ ] Add `sort_by` feature (A-Z)
 - [ ] Set up notification mailers
-- [ ] Add pagination
-- [ ] Add `sort_by` feature
