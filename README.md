@@ -15,4 +15,4 @@ Uses:
 - [ ] Add `:currency` and `:frequency` dropdown fields to db
 - [x] ~~Order alphabetically~~
 - [ ] Set up notification mailers
-- [ ] Change url slugs from `:id` to `:name`
+- [x] ~~Change url slugs from using~~ `:id` ~~to~~ `:name`
