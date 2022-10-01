@@ -4,7 +4,7 @@ class SubscriptionsController < ApplicationController
   end
 
   def show
-    @subscription = Subscription.find(params[:id])
+    @subscription = Subscription.friendly.find(params[:id])
   end
 
   def new
@@ -22,11 +22,11 @@ class SubscriptionsController < ApplicationController
   end
 
   def edit
-    @subscription = Subscription.find(params[:id])
+    @subscription = Subscription.friendly.find(params[:id])
   end
 
   def update
-    @subscription = Subscription.find(params[:id])
+    @subscription = Subscription.friendly.find(params[:id])
 
     if @subscription.update(subscription_params)
       redirect_to @subscription
@@ -36,7 +36,7 @@ class SubscriptionsController < ApplicationController
   end
 
   def destroy
-    @subscription = Subscription.find(params[:id])
+    @subscription = Subscription.friendly.find(params[:id])
     @subscription.destroy
 
     redirect_to root_path, status: :see_other
