@@ -2,11 +2,16 @@
 
 <p class='mt-12'>
   <span class='font-semibold'>Cost: </span>
-  &dollar;<%= @subscription.cost %>
+  &dollar;<%= @subscription.cost %> <%= @subscription.currency %>
 </p>
 
 <p>
-  <span class='font-semibold'>Renewed on: </span>
+  <span class='font-semibold'>Renews: </span>
+  <%= @subscription.frequency %>
+</p>
+
+<p>
+  <span class='font-semibold'>Renews next: </span>
   <%= @subscription.renewal_date %>
 </p>
 
