@@ -15,4 +15,7 @@ Uses:
 - [x] ~~Change url slugs from using~~ `:id` ~~to~~ `:name`
 - [x] ~~Order alphabetically~~
 - [x] ~~Add~~ `:currency` ~~and~~ `:frequency` ~~dropdown fields to db~~
+- [ ] Set up users
 - [ ] Set up notification mailers
+- [ ] Add pagination
+- [ ] Add ability to filter by alphabet
