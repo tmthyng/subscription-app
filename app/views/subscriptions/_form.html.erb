@@ -17,12 +17,12 @@
 
   <div class='mt-6'>
     <%= form.label 'Currency', :class => 'text-sm font-semibold' %><br />
-    <%= form.select(:currency, options_for_select([['NZD', 'NZD'], ['AUD', 'AUD'], ['USD', 'USD'], ['EURO', 'EURO']])) %>
+    <%= form.select(:currency, options_for_select([['NZD', 'NZD'], ['AUD', 'AUD'], ['USD', 'USD'], ['EURO', 'EURO']]), {}, {class: 'border-0 border-b-2 border-zinc-300 focus:border-zinc-500 focus:ring-0 dark:bg-zinc-700'}) %>
   </div>
 
   <div class='mt-6'>
     <%= form.label 'Frequency', :class => 'text-sm font-semibold' %><br />
-    <%= form.select(:frequency, options_for_select([['Every month', 'Every month'], ['Every 6 months', 'Every 6 months'], ['Every year', 'Every year']])) %>
+    <%= form.select(:frequency, options_for_select([['Every month', 'Every month'], ['Every 6 months', 'Every 6 months'], ['Every year', 'Every year']]), {}, {class: 'border-0 border-b-2 border-zinc-300 focus:border-zinc-500 focus:ring-0 dark:bg-zinc-700'}) %>
   </div>
 
   <div class='mt-6'>
